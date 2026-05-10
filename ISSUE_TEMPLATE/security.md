@@ -1,23 +1,19 @@
-# Warwatch — Security
-
-> Label: `Warwatch`
+---
+name: "Warwatch"
+about: Report a security vulnerability under wartime surveillance
+title: "[SECURITY] "
+labels: "Warwatch"
+assignees: ""
+---
 
 ## Threat Report
+
 <!-- What vulnerability was identified? CVE reference if applicable. Affected crate and version. -->
 
-## Corrective Action
-<!-- What was patched, replaced, or removed? -->
+## Impact
 
-## Checklist
+<!-- What can be exploited? What is the blast radius? -->
 
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
-- [ ] Affected dependency updated or replaced
-- [ ] `deny.toml` updated
-- [ ] No secrets or credentials introduced in the diff
+## Suggested Corrective Action
 
-## Closes
-
-Closes #
+<!-- Patch, dependency replacement, or mitigation. -->

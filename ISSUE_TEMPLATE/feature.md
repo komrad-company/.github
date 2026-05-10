@@ -1,26 +1,23 @@
-# Party Directive — New Feature
-
-> Label: `Party Directive`
+---
+name: "Party Directive"
+about: Submit a feature request to the Central Committee
+title: "[FEATURE] "
+labels: "Party Directive"
+assignees: ""
+---
 
 ## Mandate
-<!-- What does this feature implement? One directive sentence. -->
+
+<!-- What feature is requested? One directive sentence. -->
 
 ## Rationale
-<!-- Why was this ordered? What problem does it solve for the collective? -->
 
-## Architecture
-<!-- Technical decisions: new types, modules, changed interfaces, added dependencies -->
+<!-- Why does the collective need this? What problem does it solve? -->
 
-## Checklist
+## Proposed Behavior
 
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
-- [ ] Unit tests cover the new behavior
-- [ ] Integration tests updated if public API changed
-- [ ] `deny.toml` updated if a dependency was added
+<!-- How should it work? API surface, input/output, integration with existing crates. -->
 
-## Closes
+## Alternatives Considered
 
-Closes #
+<!-- What other approaches were evaluated and why were they rejected? -->

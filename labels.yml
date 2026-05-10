@@ -1,0 +1,17 @@
+# All changes must go through this file, comrade.
+
+- name: "Comrade's Mishap"
+  color: "cc0000"
+  description: "An unintentional error committed by a loyal but fallible comrade"
+
+- name: "Five-Year Plan"
+  color: "c9a800"
+  description: "Improvement scheduled to exceed the Party's objectives"
+
+- name: "Party Directive"
+  color: "8b1a1a"
+  description: "New feature ordered by the Central Committee"
+
+- name: "Warwatch"
+  color: "1a3a1a"
+  description: "Security vulnerability under wartime surveillance"

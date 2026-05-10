@@ -1,21 +1,15 @@
-# Five-Year Plan — Maintenance
-
-> Label: `Five-Year Plan`
+---
+name: "Five-Year Plan — Maintenance"
+about: Report a maintenance task — dependencies, CI, configuration
+title: "[CHORE] "
+labels: "Five-Year Plan"
+assignees: ""
+---
 
 ## Scope
-<!-- Dependencies updated, CI pipeline adjusted, configuration changed. -->
+
+<!-- What needs updating — dependency, CI pipeline, configuration, tooling? -->
 
 ## Rationale
-<!-- Why was this maintenance necessary? -->
 
-## Checklist
-
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
-- [ ] `deny.toml` updated if dependencies changed
-
-## Closes
-
-Closes # _(if applicable)_
+<!-- Why is this maintenance necessary? Security update, version EOL, broken pipeline? -->

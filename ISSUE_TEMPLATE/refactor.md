@@ -1,25 +1,19 @@
-# Five-Year Plan — Refactor
-
-> Label: `Five-Year Plan`
+---
+name: "Five-Year Plan — Refactor"
+about: Propose a structural improvement with no behavioral change
+title: "[REFACTOR] "
+labels: "Five-Year Plan"
+assignees: ""
+---
 
 ## Objective
-<!-- What was restructured? -->
+
+<!-- What should be restructured? -->
 
 ## Rationale
-<!-- Why was this restructuring ordered? What collective objective does it serve? -->
+
+<!-- Why is this restructuring necessary? What collective objective does it serve? -->
 
 ## Scope
-<!-- Changed modules, types, visibility, error handling. State explicitly: no behavioral change introduced. -->
 
-## Checklist
-
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
-- [ ] No behavioral change introduced
-- [ ] Public API unchanged or migration documented
-
-## Closes
-
-Closes #
+<!-- Affected modules, types, visibility rules. Confirm: no behavioral change expected. -->

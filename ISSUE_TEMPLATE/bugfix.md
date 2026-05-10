@@ -1,24 +1,33 @@
-# Comrade's Mishap — Bug Fix
-
-> Label: `Comrade's Mishap`
+---
+name: "Comrade's Mishap"
+about: Report a defect to the collective
+title: "[BUG] "
+labels: "Comrade's Mishap"
+assignees: ""
+---
 
 ## Incident Report
-<!-- What was the bug? How was it triggered? -->
 
-## Root Cause
-<!-- Why did this error occur? What invariant was violated? -->
+<!-- What is the bug? How is it triggered? -->
 
-## Corrective Action
-<!-- What was changed to fix it? -->
+## Expected Behavior
 
-## Checklist
+<!-- What should happen? -->
 
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
-- [ ] Regression test added for the reported behavior
+## Actual Behavior
 
-## Closes
+<!-- What happens instead? -->
 
-Closes #
+## Reproduction Steps
+
+```
+1.
+2.
+3.
+```
+
+## Environment
+
+- Crate version:
+- Rust version (`rustc --version`):
+- OS:
