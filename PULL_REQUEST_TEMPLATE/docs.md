@@ -1,56 +1,19 @@
-# 📚 Documentation
+# Five-Year Plan — Documentation
 
-## Description
-<!-- Décris la fonctionnalité ajoutée -->
+> Label: `Five-Year Plan`
 
-## Motivation
-<!-- Pourquoi cette fonctionnalité ? Quel problème résout-elle ? -->
+## Scope
+<!-- What was documented or corrected? -->
 
-## Architecture
-<!-- Choix techniques, structure, dépendances ajoutées, impact sur l'existant -->
+## Rationale
+<!-- Why was this necessary? What was missing, incorrect, or non-obvious? -->
 
-## Outils & versions
-<!-- Liste des outils/libs utilisés avec leur version -->
-- 
-- 
-- 
+## Checklist
 
-## Prérequis
-<!-- Ce qu'il faut avoir installé ou configuré avant -->
-- 
-- 
+- [ ] Documentation follows the minimum-useful principle: only what cannot be inferred from name and type
+- [ ] No implementation details documented beyond non-obvious constraints or invariants
+- [ ] README updated if public interface changed
 
-## Build & Deploy
-<!-- Commandes pour builder et déployer -->
-```bash
-# Build
+## Closes
 
-# Deploy
-
-```
-
-## Tests
-<!-- Comment tester la fonctionnalité, scénarios couverts -->
-- [ ] Tests unitaires
-- [ ] Tests d'intégration
-- [ ] Test manuel
-
-```bash
-# Lancer les tests
-
-```
-
-## Changements principaux
-- 
-- 
-- 
-
-## Captures d'écran
-<!-- Si applicable -->
-
-## Issues liées
 Closes #
-
-## Contributeurs
-<!-- Personnes ayant participé à cette PR -->
-- @

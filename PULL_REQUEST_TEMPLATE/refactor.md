@@ -1,56 +1,25 @@
-# ♻️ Refactor
+# Five-Year Plan — Refactor
 
-## Description
-<!-- Décris la fonctionnalité ajoutée -->
+> Label: `Five-Year Plan`
 
-## Motivation
-<!-- Pourquoi cette fonctionnalité ? Quel problème résout-elle ? -->
+## Objective
+<!-- What was restructured? -->
 
-## Architecture
-<!-- Choix techniques, structure, dépendances ajoutées, impact sur l'existant -->
+## Rationale
+<!-- Why was this restructuring ordered? What collective objective does it serve? -->
 
-## Outils & versions
-<!-- Liste des outils/libs utilisés avec leur version -->
-- 
-- 
-- 
+## Scope
+<!-- Changed modules, types, visibility, error handling. State explicitly: no behavioral change introduced. -->
 
-## Prérequis
-<!-- Ce qu'il faut avoir installé ou configuré avant -->
-- 
-- 
+## Checklist
 
-## Build & Deploy
-<!-- Commandes pour builder et déployer -->
-```bash
-# Build
+- [ ] `cargo fmt -- --check`
+- [ ] `cargo clippy -- -D warnings`
+- [ ] `cargo test`
+- [ ] `cargo deny check`
+- [ ] No behavioral change introduced
+- [ ] Public API unchanged or migration documented
 
-# Deploy
+## Closes
 
-```
-
-## Tests
-<!-- Comment tester la fonctionnalité, scénarios couverts -->
-- [ ] Tests unitaires
-- [ ] Tests d'intégration
-- [ ] Test manuel
-
-```bash
-# Lancer les tests
-
-```
-
-## Changements principaux
-- 
-- 
-- 
-
-## Captures d'écran
-<!-- Si applicable -->
-
-## Issues liées
 Closes #
-
-## Contributeurs
-<!-- Personnes ayant participé à cette PR -->
-- @

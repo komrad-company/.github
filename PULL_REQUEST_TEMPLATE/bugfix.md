@@ -1,50 +1,24 @@
-# 🐛 Correction de bug
+# Comrade's Mishap — Bug Fix
 
-## Description
-<!-- Décris le bug et la correction apportée -->
+> Label: `Comrade's Mishap`
 
-## Outils & versions
-<!-- Liste des outils/libs utilisés avec leur version -->
-- 
-- 
-- 
+## Incident Report
+<!-- What was the bug? How was it triggered? -->
 
-## Prérequis
-<!-- Ce qu'il faut avoir installé ou configuré avant -->
-- 
-- 
+## Root Cause
+<!-- Why did this error occur? What invariant was violated? -->
 
-## Build & Deploy
-<!-- Commandes pour builder et déployer -->
-```bash
-# Build
+## Corrective Action
+<!-- What was changed to fix it? -->
 
-# Deploy
+## Checklist
 
-```
+- [ ] `cargo fmt -- --check`
+- [ ] `cargo clippy -- -D warnings`
+- [ ] `cargo test`
+- [ ] `cargo deny check`
+- [ ] Regression test added for the reported behavior
 
-## Tests
-<!-- Comment tester la fonctionnalité, scénarios couverts -->
-- [ ] Tests unitaires
-- [ ] Tests d'intégration
-- [ ] Test manuel
+## Closes
 
-```bash
-# Lancer les tests
-
-```
-
-## Changements principaux
-- 
-- 
-- 
-
-## Captures d'écran
-<!-- Si applicable -->
-
-## Issues liées
 Closes #
-
-## Contributeurs
-<!-- Personnes ayant participé à cette PR -->
-- @

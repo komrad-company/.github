@@ -1,47 +1,21 @@
-# 🔧 Chore / Maintenance
+# Five-Year Plan — Maintenance
 
-## Description
-<!-- Décris la tâche de maintenance (deps, config, CI, etc.) -->
+> Label: `Five-Year Plan`
 
-## Outils & versions
-<!-- Liste des outils/libs utilisés avec leur version -->
-- 
-- 
-- 
+## Scope
+<!-- Dependencies updated, CI pipeline adjusted, configuration changed. -->
 
-## Prérequis
-<!-- Ce qu'il faut avoir installé ou configuré avant -->
-- 
-- 
+## Rationale
+<!-- Why was this maintenance necessary? -->
 
-## Build & Deploy
-<!-- Commandes pour builder et déployer -->
-```bash
-# Build
+## Checklist
 
-# Deploy
+- [ ] `cargo fmt -- --check`
+- [ ] `cargo clippy -- -D warnings`
+- [ ] `cargo test`
+- [ ] `cargo deny check`
+- [ ] `deny.toml` updated if dependencies changed
 
-```
+## Closes
 
-## Tests
-<!-- Comment tester la fonctionnalité, scénarios couverts -->
-- [ ] Tests unitaires
-- [ ] Tests d'intégration
-- [ ] Test manuel
-
-```bash
-# Lancer les tests
-
-```
-
-## Changements principaux
-- 
-- 
-- 
-
-## Captures d'écran
-<!-- Si applicable -->
-
-## Contributeurs
-<!-- Personnes ayant participé à cette PR -->
-- @
+Closes # _(if applicable)_

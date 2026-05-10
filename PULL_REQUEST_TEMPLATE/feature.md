@@ -1,56 +1,26 @@
-# ✨ Nouvelle fonctionnalité
+# Party Directive — New Feature
 
-## Description
-<!-- Décris la fonctionnalité ajoutée -->
+> Label: `Party Directive`
 
-## Motivation
-<!-- Pourquoi cette fonctionnalité ? Quel problème résout-elle ? -->
+## Mandate
+<!-- What does this feature implement? One directive sentence. -->
+
+## Rationale
+<!-- Why was this ordered? What problem does it solve for the collective? -->
 
 ## Architecture
-<!-- Choix techniques, structure, dépendances ajoutées, impact sur l'existant -->
+<!-- Technical decisions: new types, modules, changed interfaces, added dependencies -->
 
-## Outils & versions
-<!-- Liste des outils/libs utilisés avec leur version -->
-- 
-- 
-- 
+## Checklist
 
-## Prérequis
-<!-- Ce qu'il faut avoir installé ou configuré avant -->
-- 
-- 
+- [ ] `cargo fmt -- --check`
+- [ ] `cargo clippy -- -D warnings`
+- [ ] `cargo test`
+- [ ] `cargo deny check`
+- [ ] Unit tests cover the new behavior
+- [ ] Integration tests updated if public API changed
+- [ ] `deny.toml` updated if a dependency was added
 
-## Build & Deploy
-<!-- Commandes pour builder et déployer -->
-```bash
-# Build
+## Closes
 
-# Deploy
-
-```
-
-## Tests
-<!-- Comment tester la fonctionnalité, scénarios couverts -->
-- [ ] Tests unitaires
-- [ ] Tests d'intégration
-- [ ] Test manuel
-
-```bash
-# Lancer les tests
-
-```
-
-## Changements principaux
-- 
-- 
-- 
-
-## Captures d'écran
-<!-- Si applicable -->
-
-## Issues liées
 Closes #
-
-## Contributeurs
-<!-- Personnes ayant participé à cette PR -->
-- @

@@ -1,10 +1,19 @@
 # Pull Request
 
 ## Description
-<!-- Décris brièvement les changements -->
+<!-- Describe the change and its motivation. -->
 
-## Issues liées
+## Checklist
+
+- [ ] `cargo fmt -- --check`
+- [ ] `cargo clippy -- -D warnings`
+- [ ] `cargo test`
+- [ ] `cargo deny check`
+
+## Closes
+
 Closes #
 
 ---
-<sub>💡 Pour utiliser un template spécifique, ajoute `?template=feature.md` (ou `bugfix.md`, `refactor.md`, `docs.md`, `chore.md`) à l'URL de création de la PR.</sub>
+
+_For a specialized template, append to the PR creation URL: `?template=feature.md`, `bugfix.md`, `refactor.md`, `docs.md`, `chore.md`, or `security.md`_
