@@ -1,0 +1,37 @@
+name: "Party Directive"
+description: Submit a feature request to the Central Committee
+title: "[FEATURE] "
+labels: ["Party Directive"]
+assignees: []
+body:
+  - type: textarea
+    id: mandate
+    attributes:
+      label: Mandate
+      description: What feature is requested? One directive sentence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why does the collective need this? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Behavior
+      description: How should it work? API surface, input/output, integration with existing crates.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches were evaluated and why were they rejected?
+    validations:
+      required: false

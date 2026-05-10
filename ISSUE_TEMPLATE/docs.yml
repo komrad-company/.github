@@ -1,0 +1,21 @@
+name: "Five-Year Plan — Documentation"
+description: Report missing, incorrect, or insufficient documentation
+title: "[DOCS] "
+labels: ["Five-Year Plan"]
+assignees: []
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is missing, incorrect, or non-obvious? Which file or symbol?
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this documentation necessary? What cannot be inferred from name and type alone?
+    validations:
+      required: true

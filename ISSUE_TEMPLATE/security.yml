@@ -1,0 +1,29 @@
+name: "Warwatch"
+description: Report a security vulnerability under wartime surveillance
+title: "[SECURITY] "
+labels: ["Warwatch"]
+assignees: []
+body:
+  - type: textarea
+    id: threat
+    attributes:
+      label: Threat Report
+      description: What vulnerability was identified? CVE reference if applicable. Affected crate and version.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What can be exploited? What is the blast radius?
+    validations:
+      required: true
+
+  - type: textarea
+    id: action
+    attributes:
+      label: Suggested Corrective Action
+      description: Patch, dependency replacement, or mitigation.
+    validations:
+      required: false

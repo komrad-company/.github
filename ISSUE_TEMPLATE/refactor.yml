@@ -1,0 +1,29 @@
+name: "Five-Year Plan — Refactor"
+description: Propose a structural improvement with no behavioral change
+title: "[REFACTOR] "
+labels: ["Five-Year Plan"]
+assignees: []
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should be restructured?
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this restructuring necessary? What collective objective does it serve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Affected modules, types, visibility rules. Confirm no behavioral change is expected.
+    validations:
+      required: true
