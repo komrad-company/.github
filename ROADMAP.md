@@ -28,7 +28,7 @@ Komrad is a sovereign, open-source SIEM stack built entirely in Rust. It is desi
 | **Kontracts** | [`Kontracts`](https://github.com/komrad-company/Kontracts) | 🟡 Active | gRPC contract definitions (protobuf + generated Rust types) shared across components |
 | **Kompiler** | [`Kompiler`](https://github.com/komrad-company/Kompiler) | 🟡 Active | Compiles extended Sigma detection rules into Quickwit queries |
 | **Korelator** | [`Korelator`](https://github.com/komrad-company/Korelator) | 🟡 Active | Correlation engine — evaluates compiled rules against incoming events and generates alerts |
-| **Kolektor** | [`Kolektor`](https://github.com/komrad-company/Kolektor) | 🟡 Active | Catalogue of Vector.dev pipeline configurations with OCSF normalisation — 14+ sources across 6 categories, CI-tested, Docker image published to ghcr.io |
+| **Kolektor** | [`Kolektor`](https://github.com/komrad-company/Kolektor) | 🟡 Active | Catalogue of Vector.dev pipeline configurations with OCSF normalisation, manageable via Kontrol |
 | **Krawler** | private | 🔴 Planned | Pull-based log collector — fetches logs from remote sources (APIs, syslog, file, cloud) without requiring inbound connectivity |
 | **Kontrol** | private | 🟠 Refactor | Web UI (Svelte) — central interface for managing pipelines, rules, alerts, and search |
 | **Kontinuous-integration** | [`Kontinuous-integration`](https://github.com/komrad-company/Kontinuous-integration) | 🟡 Active | Shared CI/CD infrastructure and reusable GitHub Actions workflows |
