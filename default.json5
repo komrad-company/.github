@@ -1,0 +1,82 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+
+  // Komrad Engineering Collective — shared Renovate preset.
+  // Three categories of updates are surfaced distinctly: security, major, minor.
+  // Patch updates are folded into the minor stream. Differentiation is carried
+  // by PR title prefix and by the label set (Warwatch for security, Five-Year
+  // Plan for maintenance updates).
+  //
+  // Consume from a repository with:
+  //   { "extends": ["github>komrad-company/.github"] }
+
+  extends: [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommitsDisabled",
+  ],
+
+  timezone: "Europe/Paris",
+  schedule: ["before 7am on monday"],
+  branchPrefix: "renovate/",
+  rangeStrategy: "bump",
+  rebaseWhen: "behind-base-branch",
+  prConcurrentLimit: 5,
+  prHourlyLimit: 0,
+  labels: ["Five-Year Plan"],
+
+  // Komrad commit convention: [ACTION] message, English.
+  commitMessagePrefix: "[FIX]",
+  commitMessageAction: "update",
+  commitMessageTopic: "{{depName}}",
+  commitMessageExtra: "to {{newVersion}}",
+
+  // OSV scanning in addition to GitHub advisories.
+  osvVulnerabilityAlerts: true,
+
+  // === SECURITY === immediate, off-schedule, Warwatch label.
+  vulnerabilityAlerts: {
+    enabled: true,
+    labels: ["Warwatch"],
+    schedule: ["at any time"],
+    minimumReleaseAge: "0 days",
+    prCreation: "immediate",
+    commitMessagePrefix: "[FIX]",
+    commitMessageAction: "security update",
+    prTitle: "[FIX] security: update {{depName}} to {{newVersion}}",
+  },
+
+  packageRules: [
+    // === MAJOR === dashboard approval required, longer cooldown.
+    {
+      matchUpdateTypes: ["major"],
+      labels: ["Five-Year Plan"],
+      dependencyDashboardApproval: true,
+      minimumReleaseAge: "7 days",
+      commitMessagePrefix: "[FIX]",
+      prTitle: "[FIX] major: update {{depName}} to {{newVersion}}",
+    },
+
+    // === MINOR (covers minor + patch) === scheduled, short cooldown.
+    {
+      matchUpdateTypes: ["minor", "patch"],
+      labels: ["Five-Year Plan"],
+      minimumReleaseAge: "3 days",
+      commitMessagePrefix: "[FIX]",
+      prTitle: "[FIX] minor: update {{depName}} to {{newVersion}}",
+    },
+
+    // Lockfile maintenance — separate stream.
+    {
+      matchUpdateTypes: ["lockFileMaintenance"],
+      labels: ["Five-Year Plan"],
+      commitMessagePrefix: "[FIX]",
+      prTitle: "[FIX] lockfile maintenance",
+    },
+  ],
+
+  lockFileMaintenance: {
+    enabled: true,
+    schedule: ["before 7am on the first day of the month"],
+  },
+}
