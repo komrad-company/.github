@@ -39,12 +39,30 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: error_output
+    attributes:
+      label: Error Output
+      description: Exact error message, panic, or Khronika log output.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal Reproduction
+      description: Minimal code snippet or YAML rule that reliably triggers the bug.
+      render: yaml
+    validations:
+      required: false
+
   - type: input
     id: crate_version
     attributes:
       label: Crate version
     validations:
-      required: true
+      required: false
 
   - type: input
     id: rust_version
@@ -52,7 +70,15 @@ body:
       label: Rust version
       placeholder: "rustc --version"
     validations:
-      required: true
+      required: false
+
+  - type: input
+    id: cargo_version
+    attributes:
+      label: Cargo version
+      placeholder: "cargo --version"
+    validations:
+      required: false
 
   - type: input
     id: os

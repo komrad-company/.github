@@ -1,19 +1,25 @@
 # Pull Request
 
+> Before submitting, read [CONTRIBUTING.md](../CONTRIBUTING.md).
+
 ## Description
 <!-- Describe the change and its motivation. -->
 
+## Changes
+<!-- Detail what was added, modified, or removed. -->
+
+## Testing
+<!-- How was this change tested? What scenarios were covered? -->
+
+## Breaking Changes
+<!-- List any breaking changes. If none, write "None". -->
+
 ## Checklist
 
-- [ ] `cargo fmt -- --check`
-- [ ] `cargo clippy -- -D warnings`
-- [ ] `cargo test`
-- [ ] `cargo deny check`
+- [ ] CI checks pass
+- [ ] Tests pass
+- [ ] Documentation updated if behavior changed
 
 ## Closes
 
 Closes #
-
----
-
-_For a specialized template, append to the PR creation URL: `?template=feature.md`, `bugfix.md`, `refactor.md`, `docs.md`, `chore.md`, or `security.md`_
