@@ -60,10 +60,7 @@ The goal of this phase is to produce a functional, self-hostable SIEM that a tec
 - [ ] OCSF normalisation for all Tier 1 pipelines
 - [ ] CI testing for pipeline configs (lint, schema validation)
 - [ ] gRPC API for pipeline management (Kontracts)
-
-**Krawler**
-- [ ] Pull-based collector supporting initial source types (file, syslog receiver, HTTP/API polling)
-- [ ] Controlled via Kontrol through gRPC
+- [ ] Message queue integration (Kafka / Redpanda) — durable buffer between Vector pipelines and the rest of the stack, absorbs backpressure when a downstream component is unavailable
 
 **Korelator**
 - [ ] End-to-end rule evaluation pipeline (Kompiler → Korelator → alert)
@@ -97,6 +94,10 @@ The goal of this phase is to make Komrad production-ready and extend the catalog
 **Kolektor catalogue expansion**
 - [ ] Tier 2 sources (Azure, GCP, Okta, Palo Alto, Fortinet, etc.)
 - [ ] Community-contributed pipelines with review process
+
+**Krawler**
+- [ ] Pull-based collector supporting initial source types (file, syslog receiver, HTTP/API polling)
+- [ ] Controlled via Kontrol through gRPC
 
 **Operability**
 - [ ] Metrics and health endpoints for all components (Prometheus-compatible)
