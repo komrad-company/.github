@@ -28,7 +28,7 @@ Komrad is a sovereign, open-source SIEM stack built entirely in Rust. It is desi
 | **Kontracts** | [`Kontracts`](https://github.com/komrad-company/Kontracts) | 🟡 Active | gRPC contract definitions (protobuf + generated Rust types) shared across components |
 | **Kompiler** | [`Kompiler`](https://github.com/komrad-company/Kompiler) | 🟡 Active | Compiles extended Sigma detection rules into Quickwit queries |
 | **Korelator** | [`Korelator`](https://github.com/komrad-company/Korelator) | 🟡 Active | Correlation engine — evaluates compiled rules against incoming events and generates alerts |
-| **Kolektor** | private | 🔴 Early | Catalogue of Vector.dev pipeline configurations with OCSF normalisation, manageable via Kontrol |
+| **Kolektor** | [`Kolektor`](https://github.com/komrad-company/Kolektor) | 🟡 Active | Catalogue of Vector.dev pipeline configurations with OCSF normalisation — 14+ sources across 6 categories, CI-tested, Docker image published to ghcr.io |
 | **Krawler** | private | 🔴 Planned | Pull-based log collector — fetches logs from remote sources (APIs, syslog, file, cloud) without requiring inbound connectivity |
 | **Kontrol** | private | 🟠 Refactor | Web UI (Svelte) — central interface for managing pipelines, rules, alerts, and search |
 | **Kontinuous-integration** | [`Kontinuous-integration`](https://github.com/komrad-company/Kontinuous-integration) | 🟡 Active | Shared CI/CD infrastructure and reusable GitHub Actions workflows |
@@ -56,10 +56,10 @@ The goal of this phase is to establish the core building blocks that all other c
 The goal of this phase is to produce a functional, self-hostable SIEM that a technically capable team can deploy and operate.
 
 **Kolektor**
-- [ ] Initial catalogue of Vector.dev pipeline configurations for Tier 1 sources (Linux syslog, Windows Event Log, OPNsense, AWS CloudTrail, CrowdStrike)
-- [ ] OCSF normalisation for all Tier 1 pipelines
-- [ ] CI testing for pipeline configs (lint, schema validation)
-- [ ] gRPC API for pipeline management (Kontracts)
+- [x] Initial catalogue of Vector.dev pipeline configurations — 14 sources across network, endpoint, identity, linux, cloud, and web categories
+- [x] OCSF normalisation for all catalogue sources
+- [x] CI pipeline — `vector validate`, `vector test`, coverage enforcement, Docker image published to ghcr.io on every merge to main
+- [ ] gRPC API for pipeline management (Kontracts) — in progress
 - [ ] Message queue integration (Kafka / Redpanda) — durable buffer between Vector pipelines and the rest of the stack, absorbs backpressure when a downstream component is unavailable
 
 **Korelator**
