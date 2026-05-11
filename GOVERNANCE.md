@@ -38,6 +38,16 @@ Anyone who submits a pull request, opens an issue, or participates in discussion
 
 ---
 
+## Core Team Continuity
+
+A core team member is not removed from the project without their explicit consent. The collective does not expel its builders.
+
+No pull request, branch, or contribution from a core team member may be closed, rejected, or overridden without their acknowledgement. Disagreements on contributions follow the process defined in *Decision Making*.
+
+Authorship is permanent. Past contributions cannot be erased, reassigned, or used to exclude their author from the project's history.
+
+---
+
 ## Domain Authority
 
 Each core team member holds final authority within their domain. Bottlenecks are not acceptable.
