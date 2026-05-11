@@ -18,7 +18,7 @@ The core team holds final authority over project direction, architecture, releas
 | Name | GitHub | Domain |
 |------|--------|--------|
 | Benoit Caillabet | @bcaillabet | SOC architecture, integrations, catalog, infrastructure |
-| Tristan | @wampixel | Rust development, cryptography, component internals |
+| Tristan Rodriguez | @wampixel | Rust development, cryptography, component internals |
 
 The core team operates by consensus. Each member holds veto rights within their primary domain. See *Domain Authority*.
 
@@ -84,28 +84,17 @@ When the core team cannot reach consensus, a 7-day open discussion period is ope
 
 ## Pull Request Policy
 
-All pull requests must:
+All pull requests require approval from at least one core team member before merging. `main` is protected — direct push is forbidden. Functional changes require review. Core team members may self-merge trivial changes (typos, CI fixes).
 
-1. Target the appropriate branch — `main` is protected, use feature branches.
-2. Pass all CI checks.
-3. Include a clear description of the change and its motivation.
-4. Receive approval from **at least one core team member** before merging.
-
-Core team members may self-merge trivial changes (typos, CI fixes). Functional changes require review.
-
-External contributors are encouraged to open a draft PR or an issue before investing significant effort. Validate direction with the core team first.
+For contribution workflow, branch naming, commit format, and code standards, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
 ## Developer Certificate of Origin (DCO)
 
-Komrad uses the [Developer Certificate of Origin](https://developercertificate.org/). Every commit must carry a `Signed-off-by` line:
+Komrad uses the [Developer Certificate of Origin](https://developercertificate.org/). This is not a CLA. It is a declaration that the contribution is yours to give and that you agree to the project's licence terms. Contributors acting in a professional capacity must verify that their employer permits open-source contributions under these terms.
 
-```bash
-git commit -s -m "[ACTION] your commit message"
-```
-
-This is not a CLA. It is a declaration that the contribution is yours to give and that you agree to the project's licence terms. Contributors acting in a professional capacity must verify that their employer permits open-source contributions under these terms.
+For implementation details, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
