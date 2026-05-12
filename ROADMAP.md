@@ -66,7 +66,7 @@ The goal of this phase is to produce a functional, self-hostable SIEM that a tec
 - [ ] End-to-end rule evaluation pipeline (Kompiler → Korelator → alert)
 - [ ] Time-based correlation engine — evaluate sequences of events over sliding or fixed time windows
 - [ ] Extended Sigma rule format supporting temporal correlation conditions (not supported by standard Sigma)
-- [ ] Alert storage and retrieval via Quickwit
+- [ ] Alert storage and retrieval via PostgreSQL — Quickwit is the event/log source queried by the correlation engine
 - [ ] gRPC API for rule and alert management
 
 **Kontrol**
