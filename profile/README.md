@@ -3,21 +3,24 @@
 > *"The enemy does not announce itself. The collective must see before it is seen."*
 > — Komrad Engineering Collective, May 2026
 
-Komrad is a Rust-native security platform built for event correlation at scale. It ingests streams of JSON events, evaluates them against declarative detection rules, and alerts the collective when a threat is confirmed. Every component is a crate. Every crate has a single duty. No crate exceeds its mandate.
+Komrad is a sovereign, open-source SIEM stack designed for organisations that need capable, affordable security monitoring — without vendor lock-in, without JVM overhead, and without paying for features that should be standard.
 
 ---
 
 ## Ecosystem
 
 ```
-Quickwit (JSON event stream)
-    └──► Korelator          — correlation engine, entry point of the pipeline
-              ├── Kompiler  — YAML rule parser, produces Vec<Rule>
-              └── Khronika  — unified logging, single approved channel for all telemetry
+Sources (syslog, JSON, HTTP, cloud APIs, ...)
+    └──► Kolektor (Vector)  — OCSF normalisation, 17 sources
+              └──► Quickwit (JSON event stream)
+                       └──► Korelator          — correlation engine, entry point of the pipeline
+                                 ├── Kompiler  — YAML rule parser, produces Vec<Rule>
+                                 └── Khronika  — unified logging, single approved channel for all telemetry
 ```
 
 | Repository | Role |
 |---|---|
+| [Kolektor](https://github.com/komrad-company/Kolektor) | Log collection and normalisation — catalogue of Vector.dev pipeline configurations, OCSF-normalised, 17 sources |
 | [Korelator](https://github.com/komrad-company/Korelator) | Correlation engine — consumes Quickwit events, evaluates rules, raises alerts |
 | [Kompiler](https://github.com/komrad-company/Kompiler) | Rule parser — transforms YAML detection rules into typed Rust structs |
 | [Khronika](https://github.com/komrad-company/Khronika) | Logging layer — initialises the log pipeline once, re-exports `tracing` macros |
@@ -27,7 +30,7 @@ Quickwit (JSON event stream)
 
 ## Principles
 
-**One duty per crate.** Khronika logs. Kompiler parses. Korelator correlates. A crate that exceeds its purpose is a liability.
+**One duty per component.** Kolektor normalises. Korelator correlates. Kompiler parses. Khronika logs. A component that exceeds its purpose is a liability.
 
 **The dependency arrow is one-way.** Khronika and Kompiler do not know Korelator exists. Business logic belongs to the consumer.
 
