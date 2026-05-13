@@ -8,7 +8,7 @@ body:
     id: threat
     attributes:
       label: Threat Report
-      description: What vulnerability was identified? CVE reference if applicable. Affected crate and version.
+      description: What vulnerability was identified? CVE reference if applicable. Affected component and version.
     validations:
       required: true
 

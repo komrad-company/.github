@@ -19,6 +19,7 @@
 - [ ] CI checks pass
 - [ ] Tests pass
 - [ ] Documentation updated if behavior changed
+- [ ] Branch deleted after merge
 
 ## Closes
 

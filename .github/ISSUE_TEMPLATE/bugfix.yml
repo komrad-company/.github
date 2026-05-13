@@ -43,7 +43,7 @@ body:
     id: error_output
     attributes:
       label: Error Output
-      description: Exact error message, panic, or Khronika log output.
+      description: Exact error message, stack trace, or log output.
       render: shell
     validations:
       required: false
@@ -52,37 +52,22 @@ body:
     id: reproduction
     attributes:
       label: Minimal Reproduction
-      description: Minimal code snippet or YAML rule that reliably triggers the bug.
-      render: yaml
+      description: Minimal code snippet or configuration that reliably triggers the bug.
     validations:
       required: false
 
   - type: input
-    id: crate_version
+    id: version
     attributes:
-      label: Crate version
+      label: Version
+      placeholder: "v1.2.3"
     validations:
       required: false
 
   - type: input
-    id: rust_version
+    id: environment
     attributes:
-      label: Rust version
-      placeholder: "rustc --version"
-    validations:
-      required: false
-
-  - type: input
-    id: cargo_version
-    attributes:
-      label: Cargo version
-      placeholder: "cargo --version"
-    validations:
-      required: false
-
-  - type: input
-    id: os
-    attributes:
-      label: OS
+      label: Environment
+      placeholder: "Ubuntu 24.04 — rustc 1.94 / Node 22 / Python 3.12 / …"
     validations:
       required: false

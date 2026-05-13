@@ -24,6 +24,6 @@ body:
     id: scope
     attributes:
       label: Scope
-      description: Affected modules, types, visibility rules. Confirm no behavioral change is expected.
+      description: Affected modules, types, interfaces. Confirm no behavioral change is expected.
     validations:
       required: true

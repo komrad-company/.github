@@ -24,7 +24,7 @@ body:
     id: proposed
     attributes:
       label: Proposed Behavior
-      description: How should it work? API surface, input/output, integration with existing crates.
+      description: How should it work? API surface, input/output, integration with existing components.
     validations:
       required: true
 
