@@ -56,9 +56,10 @@ The goal of this phase is to establish the core building blocks that all other c
 The goal of this phase is to produce a functional, self-hostable SIEM that a technically capable team can deploy and operate.
 
 **Kolektor**
-- [x] Initial catalogue of Vector.dev pipeline configurations — 14 sources across network, endpoint, identity, linux, cloud, and web categories
+- [x] Initial catalogue of Vector.dev pipeline configurations — 17 sources across network, endpoint, identity, linux, cloud, and web categories
 - [x] OCSF normalisation for all catalogue sources
 - [x] CI pipeline — `vector validate`, `vector test`, coverage enforcement, Docker image published to ghcr.io on every merge to main
+- [x] HTTP push source model for cloud/SaaS APIs (M365, Entra ID) — parser catalogue decoupled from any proprietary collector
 - [ ] gRPC API for pipeline management (Kontracts) — in progress
 - [ ] Message queue integration (Kafka / Redpanda) — durable buffer between Vector pipelines and the rest of the stack, absorbs backpressure when a downstream component is unavailable
 

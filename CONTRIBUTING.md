@@ -72,6 +72,20 @@ Code that does not pass these checks is not ready. It will fail CI.
 
 ---
 
+## Kolektor catalogue contributions
+
+Kolektor is not a Rust crate — it is a catalogue of Vector.dev pipeline configurations. The Rust rules below do not apply. Kolektor contributions follow their own standards, documented in [`_schema/README.md`](https://github.com/komrad-company/Kolektor/blob/main/_schema/README.md) in the Kolektor repository.
+
+The mandatory requirements are:
+
+- One `vector.toml` per source — source, VRL transform, and Quickwit sink in a single file
+- Minimum three tests per source using real raw log samples (`nominal`, `optional_missing`, `malformed`)
+- All events retain the original log in the `raw` field
+- Invalid events are routed to `raw-logs` with `parse_status = "failed"`, never silently discarded
+- `catalog/index.json` must be regenerated via `ci/catalog_index.py` before committing
+
+---
+
 ## Code standards
 
 These rules apply to all Rust code contributed to the ecosystem.
