@@ -14,6 +14,7 @@
     "config:recommended",
     ":dependencyDashboard",
     ":semanticCommitsDisabled",
+    ":pinDigests",
   ],
 
   timezone: "Europe/Paris",
@@ -22,7 +23,7 @@
   rangeStrategy: "bump",
   rebaseWhen: "behind-base-branch",
   prConcurrentLimit: 5,
-  prHourlyLimit: 0,
+  prHourlyLimit: 2,
   labels: ["Five-Year Plan"],
 
   // Komrad commit convention: [ACTION] message, English.
@@ -41,7 +42,6 @@
     schedule: ["at any time"],
     minimumReleaseAge: "0 days",
     prCreation: "immediate",
-    commitMessagePrefix: "[FIX]",
     commitMessageAction: "security update",
     prTitle: "[FIX] security: update {{depName}} to {{newVersion}}",
   },
@@ -53,7 +53,6 @@
       labels: ["Five-Year Plan"],
       dependencyDashboardApproval: true,
       minimumReleaseAge: "7 days",
-      commitMessagePrefix: "[FIX]",
       prTitle: "[FIX] major: update {{depName}} to {{newVersion}}",
     },
 
@@ -62,7 +61,6 @@
       matchUpdateTypes: ["minor", "patch"],
       labels: ["Five-Year Plan"],
       minimumReleaseAge: "3 days",
-      commitMessagePrefix: "[FIX]",
       prTitle: "[FIX] minor: update {{depName}} to {{newVersion}}",
     },
 
@@ -70,7 +68,6 @@
     {
       matchUpdateTypes: ["lockFileMaintenance"],
       labels: ["Five-Year Plan"],
-      commitMessagePrefix: "[FIX]",
       prTitle: "[FIX] lockfile maintenance",
     },
   ],
