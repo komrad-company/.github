@@ -14,6 +14,7 @@
     "config:recommended",
     ":dependencyDashboard",
     ":semanticCommitsDisabled",
+    ":pinDigests",
   ],
 
   timezone: "Europe/Paris",
